@@ -1,0 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/9274837292748/retro-archive/refs/heads/main/part%202"))()
+
+wait(0.1)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/9274837292748/retro-archive/refs/heads/main/part%203"))()
