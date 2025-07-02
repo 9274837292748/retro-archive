@@ -185,6 +185,21 @@ local lastHealth = humanoid.Health
         end
     end)
 
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local tool = Instance.new("Tool")
+tool.Name = "SitTool"
+tool.RequiresHandle = false
+tool.Parent = player.Backpack
+
+tool.Equipped:Connect(function()
+	local character = player.Character
+	if character and character:FindFirstChild("Humanoid") then
+		character.Humanoid.Sit = true
+	end
+end)
+
+
     local dances = {
         ["Dance 1"] = "rbxassetid://132149582",
         ["Dance 2"] = "rbxassetid://27789359",
